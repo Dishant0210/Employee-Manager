@@ -1,0 +1,10 @@
+I have planned small checkpoints to make this project
+First setup virtual environment
+Next create django project and application
+After that create the files we want
+Configure admin page and database for the project
+Make modules in models.py files
+After that run the server
+Next Configure html files,views and urls
+Next I have used JavaScripts and run the project and solve the errors
+This is how I have planned and executed the project 

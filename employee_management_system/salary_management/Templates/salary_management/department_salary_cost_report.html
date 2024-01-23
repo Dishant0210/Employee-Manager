@@ -1,0 +1,22 @@
+<!-- salary_management/department_salary_cost_report.html -->
+<h2>Department-wise Salary Cost Report</h2>
+
+<form method="post">
+  {% csrf_token %}
+  <label for="start_date">Start Date:</label>
+  <input type="date" name="start_date" required>
+
+  <label for="end_date">End Date:</label>
+  <input type="date" name="end_date" required>
+
+  <button type="submit">Generate Report</button>
+</form>
+
+{% if department_costs %}
+  <h3>Salary Costs:</h3>
+  <ul>
+    {% for cost in department_costs %}
+      <li>{{ cost.employee__department__name }}: {{ cost.total_cost }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}

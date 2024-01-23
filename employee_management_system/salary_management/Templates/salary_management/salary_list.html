@@ -1,0 +1,7 @@
+<!-- salary_management/salary_list.html -->
+<h2>Salary List</h2>
+<ul>
+  {% for salary in salaries %}
+    <li>{{ salary.employee.name }} - {{ salary.salary_amount }}</li>
+  {% endfor %}
+</ul>

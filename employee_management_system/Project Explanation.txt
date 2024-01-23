@@ -1,0 +1,66 @@
+Employee Management System
+Project Overview
+The Employee Management System is a web application built using Django, a high-level Python web framework. The system is designed to streamline the management of employees within an organization, including details about employees, departments, and salary information. The project is structured with three main modules: Employee Management, Department Management, and Employee Salary Management.
+
+Modules
+1. Employee Management
+Functionality:
+Add, update, and delete employee records.
+Define employee attributes such as Name, Email, Address, Designation, Reporting Manager, and Department.
+Implement a self-referential relationship for reporting managers.
+Specify employee designation as Associate, Team Lead (TL), or Manager.
+2. Department Management
+Functionality:
+
+Add, update, and delete department records.
+Define department attributes such as Name and Floor.
+Establish a hierarchical structure with one manager at the top and multiple Team Leads (TLs) under each manager.
+Reporting Page:
+
+Display an employee hierarchy within each department, showing who reports to whom.
+3. Employee Salary Management
+Functionality:
+
+Add, update, and delete salary entries for employees.
+Track salary changes over time with effective date ranges.
+Reporting Page:
+
+Calculate and display department-wise salary costs for a given date range.
+Summarize salary costs for different teams or departments.
+Tech Stack
+Backend:
+
+Python
+Django
+Database:
+
+MySQL/MariaDB/Mongo/SQLite
+Frontend:
+
+HTML, CSS
+JavaScript (with jQuery or DataTables for reporting pages)
+Usage
+Employee Module:
+
+Use the admin page to manage employee records.
+Specify designation, reporting managers, and department affiliations.
+Department Module:
+
+Admin page for department management.
+View the reporting hierarchy within each department.
+Employee Salary Module:
+
+Admin page for managing employee salary entries.
+Reporting page to view department-wise salary costs for a specified date range.
+Future Enhancements
+Implementation of additional features or improvements can include:
+Enhanced filtering options on reporting pages.
+Integration with third-party authentication systems.
+Improved user interface for better user experience.
+
+
+Credintals for Django admin page
+username:dishant
+password:123456
+
+I have used Virtual enivornment for this project.
